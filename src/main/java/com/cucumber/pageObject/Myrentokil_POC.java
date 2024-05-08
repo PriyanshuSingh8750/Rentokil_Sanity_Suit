@@ -241,6 +241,8 @@ public class Myrentokil_POC {
 			long start = System.currentTimeMillis(); // Launch Website
 			driver.findElement(By.xpath("//span[contains(text(),'Service')]")).click();
 
+//			wait.until(ExpectedConditions.visibilityOfElementLocated(
+//					By.xpath("(//div[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4'])[22]")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(
 					By.xpath("(//div[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4'])[2]")));
 			long finish = System.currentTimeMillis();
@@ -291,7 +293,7 @@ public class Myrentokil_POC {
 				long start = System.currentTimeMillis(); // Launch Website
 				site_element.click();
 				wait.until(ExpectedConditions
-						.visibilityOfElementLocated(By.xpath("(//p[starts-with(@class,'jss')])[22]")));
+						.visibilityOfElementLocated(By.xpath("(//p[starts-with(@class,'jss')])[4]")));
 				long finish = System.currentTimeMillis();
 
 				long totalTime = finish - start;
@@ -720,8 +722,10 @@ public class Myrentokil_POC {
 			long start = System.currentTimeMillis(); // Launch Website
 
 			driver.findElement(By.xpath("//button[@aria-label='documents tab']")).click();
+//			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+//					"(//div[@class='sc-fGoOlv dkJOSK MuiAccordionSummary-content MuiAccordionSummary-contentGutters'])")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-					"(//div[@class='sc-fGoOlv dkJOSK MuiAccordionSummary-content MuiAccordionSummary-contentGutters'])")));
+					"//h2[text()=\"Documents\"]")));
 			long finish = System.currentTimeMillis();
 
 			long totalTime = finish - start;
@@ -968,8 +972,10 @@ public class Myrentokil_POC {
 			long start = System.currentTimeMillis(); // Launch Website
 
 			driver.findElement(By.xpath("//button[@aria-label='Site collections tab']")).click();
+//			wait.until(ExpectedConditions.visibilityOfElementLocated(
+//					By.xpath("//span[contains(text(),'(L3) Quickbake Bakery Ltd, First Avenue')]")));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(
-					By.xpath("//span[contains(text(),'(L3) Quickbake Bakery Ltd, First Avenue')]")));
+					By.xpath("//h1[text()='Site Collections']")));
 			long finish = System.currentTimeMillis();
 
 			long totalTime = finish - start;
