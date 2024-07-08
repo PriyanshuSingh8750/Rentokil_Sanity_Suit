@@ -93,8 +93,8 @@ public class Myrentokil_POC {
 			webdriverutils.waitUntilElementVisible(By.xpath("//input[@id='txtUserName']"), 10);
 
 			driver.findElement(By.xpath("//input[@id='txtUserName']"))
-					.sendKeys("myAdm1n.Demo01@gmail.com");
-			driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("Rentokil1234!");
+					.sendKeys("");
+			driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("");
 
 			long start = System.currentTimeMillis(); // Launch Website
 			//
